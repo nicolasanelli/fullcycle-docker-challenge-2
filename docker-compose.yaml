@@ -14,7 +14,7 @@ services:
 
   node:
     build:
-      context: ./src
+      context: ./node
     container_name: node
     depends_on:
       mysql:

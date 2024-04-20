@@ -4,7 +4,7 @@
   "description": "Simple node app",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "author": "Nicolas Anelli <nickanelli@hotmail.com>",
   "license": "ISC",
