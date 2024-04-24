@@ -31,12 +31,16 @@ services:
       timeout: 5s
       retries: 10
     volumes: 
+      - db-data:/var/lib/mysql
       - ./mysql/dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment: 
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_USER=user
       - MYSQL_PASSWORD=password
       - MYSQL_DATABASE=myapp
+
+volumes:
+  db-data:
 
 networks: 
   node-network:
